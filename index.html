@@ -6,6 +6,7 @@
     <title>MAHABOCW</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="style.css" rel="stylesheet">
+    <link href="media.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -47,21 +48,36 @@
         </div>
 
         <!-- heading for search bar -->
-        <div id="heading3" class="d-flex justify-content-center align-items-center">
-            <div id="sec-headings">
-                <p>mukh prusht</p>
-                <p>amchya babat</p>
+        <div class="d-flex justify-content-center  flex-wrap text-center" id="heading3">
+            <div class="container-fluid">
+                <div class="container mt-2" id="sec-headings">
+                <p class="me-1">मुख्य पृष्ठ</p>
+                <p class="me-1">आमच्या बाबत</p>
+                <p class="me-1">कामगार</p>
+                <p class="me-1">निर्णय आणि अधिसूचना</p>
+                <p class="me-1">नागरिकांची सनद</p>
+                <p class="me-1">संपर्क</p>
+                <p class="me-1">१५० दिवस</p>
+                <p class="me-1">डाउनलोड</p>
+                <p class="me-1">लाभ वितरित</p>
+                <p class="me-1">इतर</p>
+                <p class="me-1">लॉगिन</p>
+            </div>
             </div>
 
-            <div id="search-bar">
+            <div class="container-fluid">
+                <div class="container" id="search-bar">
                 <input id="search" type="search" placeholder="Search here.....">
-                <button></button>
+                <button class="ms-0">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
             </div>
         </div>
 
         <div class=" whats-new container-fluid">
             <div class="whatsnew text-center">
-                <p>
+                <p class="pt-3 fs-bold">
                     What’s New / नवीन काय आहे
                 </p>
             </div>
@@ -82,11 +98,58 @@
         </div>
     </header>
 
+    <!-- slideshow -->
+    <div class="container-fluid m-0 p-0 slideshow">
+
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+        <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+            <img src="/imgs/constr-1.jpg" class="d-block w-100" style="height:650px; object-fit:cover;">
+            
+            <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                <h1 class="fw-bold">दुर्दैवी घटनेमध्ये आम्ही आहोत सोबत देऊन आर्थिक मदत” सामाजिक सुरक्षा सहाय्य योजना “</h1>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+            <img src="/imgs/construction-2.webp" class="d-block w-100" style="height:650px; object-fit:cover;">
+            
+            <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                <h1 class="fw-bold">जन आरोग्य योजनांचा एकच विचार ,सामान्य नागरिकांच्या हिताचाच विचार</h1>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+            <img src="/imgs/constr-2.jpg" class="d-block w-100" style="height:650px; object-fit:cover;">
+            
+            <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                <h1 class="fw-bold">कामगारांच्या मुलांच्या शिक्षणासाठी राबवून आर्थिक योजना ,देऊया त्यांच्या उज्ज्वल भविष्याला योग्य चालना</h1>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Prev / Next Buttons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+    </div>
+
     <div class="container-fluid shadow-lg  bg-body-tertiary rounded">
         <div class="row" id="menu-sec">
             <div class="p-0 col me-1">
                 <div class="boxes box1 border  border-4">
-                    <h6>बांधकाम कामगार: नोंदणी</h6>
+                    <h6 class="text-center">बांधकाम कामगार:  नोंदणी</h6>
                     <br>
                     <div >
                         <i class="fa-solid fa-address-card fa-5x d-block"></i>
@@ -94,9 +157,8 @@
                 </div>
             </div>
             <div class="p-0 col me-1">
-                <div class="boxes box2 border  border-4">
-                    <h6>बांधकाम कामगार: दाव्यासाठी ऑनलाईन </h6>
-                    <h6>अर्ज करा</h6>
+                <div class="boxes box2 border  border-4 ">
+                    <h6 class="text-center">बांधकाम कामगार:दाव्यासाठी ऑनलाईन <br>अर्ज करा</h6>
                     <br>
                     <div>
                         <i class="fa-solid fa-right-from-bracket fa-5x d-block"></i>
@@ -105,9 +167,7 @@
             </div>
             <div class="p-0 col me-1">
                 <div class="boxes box3 border  border-4">
-                    <h6>बांधकाम कामगार: ऑनलाईन नोंदणीचे</h6>
-                    <h6>नूतनीकरण</h6>
-                </br>
+                    <h6 class="text-center">बांधकाम कामगार: ऑनलाईन नोंदणीचे <br>नूतनीकरण</h6>
                     <div class="icons">
                         <i class="fa-solid fa-check fa-5x d-block"></i>
                     </div>
@@ -122,8 +182,7 @@
             </div>
             <div class="p-0 col me-1">
                 <div class="boxes box5 border  border-4">
-                    <h6>आपली बांधकाम कामगार नोंदणी</h6>
-                    <h6>अदययावत करा</h6>
+                    <h6 class="text-center">आपली बांधकाम कामगार नोंदणी अदययावत करा</h6>
                     <i class="fa-solid fa-circle-user fa-5x d-block"></i>
                 </div>
             </div>
@@ -140,15 +199,15 @@
     </div>
 
     <!-- banner-section -->
-    <div class="container-fluid banner-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 banner">
+    <div class="container-fluid  mt-5 " id="banner-section">
+        
+        <div class="row justify-content-center">
+                <div class="col-lg-4 col-12 banner">
                     <div>
-                        <h2 class="text-center">मान्यवर</h2>
-                        <div class="img-box">
-                            <img src="/imgs/img1.jpeg" class="img-fluid">
-                            <h4>श्री. देवेंद्र फडणवीस</h4>
+                        <h2 class="text-center"  style="color:black">मान्यवर</h2>
+                        <div class="img-box ">
+                            <img src="/imgs/img1.jpeg" class="img-fluid ">
+                            <h4 style="color:black">श्री. देवेंद्र फडणवीस</h4>
                         </div>
 
                         <div class="img-box">
@@ -179,12 +238,57 @@
 
                 </div>
 
-                <div class="col-lg-7">
-                    2
+                <div class="col-lg-6 col-12 ">
+                    <div class="banner-box2 border rounded p-4">
+                        <h3  style="color:black">रोजगार नियमन व सेवाशर्ती</h3>
+                        <p  class="mt-4" style="color:rgb(43, 41, 41)">इमारत व इतर बांधकाम कामगारांच्या रोजगार व सेवाशर्तीचे नियमन करण्यासाठी व त्यांच्या सुरक्षा, आरोग्य व कल्याणासाठी उपाययोजना करण्याकरीता खालील अधिनियम / नियम केंद्र व राज्य शासनाने निर्गमित केले आहेत.</p>
+
+                        <!-- making a list  -->
+                        <ul style="margin-top:50px;">
+                            <li>
+                                इमारत व इतर बांधकाम कामगार कल्याण उपकर कायदा, 1996
+                            </li>
+                            <li>
+                                इमारत व इतर बांधकाम कामगार कल्याण उपकर अधिनियम, 1998
+                            </li>
+                            <li>
+                                इमारत व इतर बांधकाम कामगार (रोजगार व सेवाशर्ती नियमन) कायदा, 1996
+                            </li>
+
+                            <li>
+                                इमारत व इतर बांधकाम कामगार (रोजगार व सेवाशर्ती नियमन) केंद्रीय अधिनियम, 1998
+                            </li>
+                            <li>
+                                महाराष्ट्र इमारत व इतर बांधकाम कामगार (रोजगार व सेवाशर्ती नियमन) अधिनियम, 2007
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- another four boxes  -->
+                    <div class="ban-box mt-4">
+                        <div class="sec-2">
+                            <h2>बांधकाम कामगार नोंदणी</h2>
+                        </div>
+
+                        <div class="sec-2">
+                            <h2>इमारत व इतर बांधकाम कामगार अधिनियमातील महत्वाच्या तरतूदी</h2>
+                        </div>
+
+                        <div class="sec-2">
+                            <h2>उपकर माहिती</h2>
+                        </div>
+
+                        <div class="sec-2">
+                            <h2>आस्थापना / बांधकाम मालक / विकासक नोंदणी</h2>
+                        </div>
+                    </div>
                 </div>
-            </div>
+
+
         </div>
     </div>
     
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
 </html>
